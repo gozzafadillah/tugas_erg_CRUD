@@ -1,0 +1,87 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(248, 225, 225);
+}
+
+.content{
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "main none"
+                         "footer footer";
+     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 200px;
+    row-gap: 5px;
+    column-gap: 10px;
+}
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px 5px 10px 5px ;
+    margin: 20px 5px;
+    background-color: rgba(203, 222, 233, 0.418);
+}
+
+header{
+    grid-area: header;
+    border-bottom: 5px solid rgb(56, 56, 56);
+
+}
+header .judul{
+    text-align: center;
+    
+}
+header .judul p{
+    font-size: 60px;
+    color: rgb(56, 56, 56);
+}
+main{
+    grid-area: main;
+}
+main p{
+    padding: 20px 10px;
+    margin: 10px 10px;
+}
+/* untuk Menu.php */
+main .menu{
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+}
+main .menu h1{
+    padding-bottom: 20px;
+}
+main .menu img{
+    width: 260px;
+    height: 240px;
+}
+main .menu table tr td{
+        font-size: 19px;
+        margin: 10px auto;
+        padding: 20px auto;
+}
+/* ================= */
+
+aside{
+    grid-area: aside;
+    
+}
+aside nav ul{
+    list-style: none;
+    
+}
+aside nav ul li{
+    margin: 4px 5px;
+    padding: 20px 10px;
+}
+footer{
+    grid-area: footer;
+}
+footer p{
+    padding: 20px 20px;
+    margin: 5px 5px;
+    text-align: center;
+}   

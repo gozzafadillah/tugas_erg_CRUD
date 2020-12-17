@@ -1,0 +1,11 @@
+<?php
+    include "data.php";
+
+
+   $id = $_GET["id"];
+   $query = "DELETE FROM t_makanan WHERE id=$id";
+
+   mysqli_query($conn,$query);
+
+   header("Location:update_delete.php");
+?>
